@@ -10,7 +10,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({extended: true}));
-app.use(express.static(__dirname + "public"));
+app.use(express.static("public"));
 
 const uri = "mongodb+srv://" + process.env.DB_USER + ":" + process.env.DB_PASS + "@cluster0-xqgi4.mongodb.net/todolistDB";
 
